@@ -9,8 +9,8 @@ def __parse_args__():
     """
     parser = argparse.ArgumentParser(description='Path to a file containing a string that is Base64 encoded and ROT13 encoded.')
     parser.add_argument('-f', dest="filename", required=True,
-                     help='file with line that is encoded multiple times', metavar="FILE",
-      type=lambda x: is_valid_file(parser, x))
+                        help='file with line that is encoded multiple times', metavar="FILE",
+                        type=lambda x: is_valid_file(parser, x))
     return parser.parse_args()
 
 
